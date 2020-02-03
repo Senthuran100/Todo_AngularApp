@@ -5,16 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TodoComponent } from './todo/todo.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import {HttpClientModule} from '@angular/common/http';
+import { CallRestComponent } from './call-rest/call-rest.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TodoComponent,
-    NavBarComponent
+    NavBarComponent,
+    CallRestComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
